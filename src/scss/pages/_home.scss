@@ -1,0 +1,90 @@
+.nav-display {
+  background-color: white;
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(10px);
+  transition: all 0.3s;
+}
+
+.nav-hidden {
+  visibility: hidden;
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: all 0.3s;
+}
+
+.home-logo {
+  background-repeat: no-repeat;
+  background-size: 104px 52px;
+  background-position: center center;
+  display: block;
+  height: 52px;
+  width: 104px;
+}
+
+.nav-section {
+  border-radius: 16px;
+  a {
+    color: black;
+  }
+  p {
+    margin-bottom: 0;
+    padding: 8px 16px;
+    font-weight: bold;
+    position: relative;
+  }
+  p:after {
+    content: '';
+    height: 1px;
+    position: absolute;
+    background-color: $barielcolor;
+    bottom: 0;
+    left: 16px;
+    width: 80%;
+  }
+}
+
+.right-nav {
+  position: relative;
+  &::before {
+    position: absolute;
+    left: -35px;
+    content: '';
+    height: 100%;
+    width: 1px;
+    background-color: $barielcolor;
+  }
+}
+
+.loginPanel {
+  background-color: white;
+}
+
+.ant-tabs-nav-wrap {
+  justify-content: center;
+}
+
+.ant-tabs-tab-btn {
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.carousel-container {
+  transition: all 0.8s;
+}
+
+.dots {
+  background-color: #dcdee1;
+}
+
+.selected-dot {
+  background-color: #3722d3;
+}
+
+.carousel-invisible {
+  opacity: 0;
+}
+
+.carousel-visible {
+  opacity: 1;
+}
